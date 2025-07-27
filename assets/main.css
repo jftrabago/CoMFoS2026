@@ -40,7 +40,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .myDesign-table td,.myDesign-table th,.myDesign-table-all td,.myDesign-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .myDesign-table th:first-child,.myDesign-table td:first-child,.myDesign-table-all th:first-child,.myDesign-table-all td:first-child{padding-left:16px}
 
-.myDesign-tableOrganizer td,.myDesign-table th,.myDesign-table-all td,.myDesign-table-all th{padding:8px 8px;display:table-cell;vertical-align:top}
+.myDesign-tableOrganizer td,.myDesign-table th,.myDesign-table-all td,.myDesign-table-all th{padding:4px 8px;display:table-cell;vertical-align:top}
 .myDesign-tableOrganizer th:first-child,.myDesign-table td:first-child,.myDesign-table-all th:first-child,.myDesign-table-all td:first-child{padding-left:16px}
 
 
