@@ -1,6 +1,10 @@
-/* W3.CSS 5.02 March 31 2025 by Jan Egil and Borge Refsnes */
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+/* 
+	W3.CSS for CoMFoS 2026
+	by Julius Fergy Rabago, 
+	Kanazawa University, Japan
+	June 24, 2025  
+*/
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit} 
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
 
