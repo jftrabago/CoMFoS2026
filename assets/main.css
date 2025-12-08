@@ -268,3 +268,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .myDesign-border-dark-grey,.myDesign-hover-border-dark-grey:hover,.myDesign-border-dark-gray,.myDesign-hover-border-dark-gray:hover{border-color:#616161!important}
 .myDesign-border-pale-red,.myDesign-hover-border-pale-red:hover{border-color:#ffe7e7!important}.myDesign-border-pale-green,.myDesign-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .myDesign-border-pale-yellow,.myDesign-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.myDesign-border-pale-blue,.myDesign-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+
+
+
+/*ADDED BY FERGY FOR COMFOSNASC*/
+.myDesign-seventh {
+  float: left;
+  width: 14.28%; /* 100 / 7 ≈ 14.28% */
+  box-sizing: border-box;
+}
