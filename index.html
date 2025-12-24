@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CoMFoSNASC2026</title>
+<title>AMSC2026Kanazawa</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/main.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Serif", sans-serif}
-body {font-size:16px;}
-.myDesign-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.myDesign-half img:hover{opacity:1}
+body,h1,h2,h3,h4,h5 {font-family: "Avenir","Avenir Next";}
+body {font-size:16px; margin:0;}
+.myDesign-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer;}
+.myDesign-half img:hover{opacity:1;}
+
+
+.myDesign-banner {
+    width: 100vw;
+    height: 100vh; /* ⬅️ covers the entire monitor */
+
+    background-image: url('images/banner.png');
+    background-repeat: no-repeat;
+
+    /* ⬅️ 300px empty space on the left */
+    background-position: left 300px center;
+
+    /* ⬅️ image fills remaining width */
+    background-size: calc(100vw - 300px) auto;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Overlay to make text more readable */
+.myDesign-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 1.); /* darker = more transparency */
+    z-index: 1;
+}
+
+/* Text on banner */
+.myDesign-banner h1 {
+    color: white;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    margin: 0;
+    font-size: 2.2em;
+}
 </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </head>
 
 <body>
-
 <!-- Sidebar/menu -->
 <nav class="myDesign-sidebar myDesign-brightOrange myDesign-collapse myDesign-top myDesign-large myDesign-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="myDesign_close()" class="myDesign-button myDesign-hide-large myDesign-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="myDesign-container">
-    <h3 class="myDesign-padding-64"><b>Co</b>ntinuum<br><b>M</b>echanics<br><b>Fo</b>cusing on<br><b>S</b>ingularities<br>&ndash;<br><b>N</b>umerical<br><b>A</b>nalysis &amp;<br><b>S</b>cientific<br><b>C</b>omputing<br><b>2026</b>
+    <!-- <h3 class="myDesign-padding-64"><b>Co</b>ntinuum<br><b>M</b>echanics<br><b>Fo</b>cusing on<br><b>S</b>ingularities<br>&ndash;<br><b>N</b>umerical<br><b>A</b>nalysis &amp;<br><b>S</b>cientific<br><b>C</b>omputing<br><b>2026</b>
 	<br>&commat; Cebu, Philippines
 	<br>June 20-23, 2026
-	</h3>
+	</h3> -->
+    <h1 class="myDesign-padding-64">
+		<b>CoMFoS</b><br>
+		<b>NASC</b><br>
+		<b>2026</b><br>
+	</h1>
   </div>
   <div class="myDesign-bar-block">
     <a href="#" onclick="myDesign_close()" class="myDesign-bar-item myDesign-button myDesign-hover-white">Home</a> 
@@ -53,16 +103,64 @@ body {font-size:16px;}
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="myDesign-overlay myDesign-hide-large" onclick="myDesign_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
+
+
+<!-- Header/Banner -->
+<div class="myDesign-banner">
+  <h1 class="myDesign-jumbo"
+      style="
+        text-align: left;
+        margin-left: 0px;
+        margin-top: 0px;
+
+        color: #ffffff;
+        line-height: 1.0;
+        letter-spacing: 0.5px;
+
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.45)
+        );
+        padding: 36px 36px;
+        border-radius: 12px;
+
+        text-shadow: 0 3px 10px rgba(0,0,0,0.9);
+        max-width: 800px;
+
+        box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      ">
+    <span style="font-size: 1.15em; font-weight: 700;">
+      Welcome to CoMFoS&ndash;NASC 2026
+    </span><br>
+
+    <span style="font-size: 0.75em; font-weight: 400; opacity: 0.9;">
+      Lapu-Lapu City
+    </span><br>
+	
+    <span style="font-size: 0.75em; font-weight: 400; opacity: 0.9;">
+      Cebu, Philippines
+    </span><br>
+
+    <span style="font-size: 0.7em; font-weight: 400; opacity: 0.85;">
+      June 20–23, 2026
+    </span>
+  </h1>
+  
+  
+</div>
+
+
+
+
 <!-- !PAGE CONTENT! -->
 <div class="myDesign-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="myDesign-container" style="margin-top:80px" id="about">
-	  <h1 class="myDesign-jumbo"><b>CoMFoS&ndash;NASC 2026</b></h1>
-	  <h2 class="myDesign-subtitle"><i>&commat;Lapu-Lapu City, Cebu, Philippines</i>, June 20-23, 2026</h2>
-
-  	
-  	
+  <div class="myDesign-container" style="margin-top:20px" id="about">
+	  <!-- <h1 class="myDesign-jumbo"><b>CoMFoS&ndash;NASC 2026</b></h1>
+	  <h2 class="myDesign-subtitle"><i>&commat;Lapu-Lapu City, Cebu, Philippines</i>, June 20-23, 2026</h2> -->
+	
 	<style>
 	  p#lastModified {
 	    color: blue;
